@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artmark Galerie Wien - Zeitgenössische Kunst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 h-20 flex items-center justify-between px-8">
+        <a href="index.html" class="text-2xl font-bold tracking-wider">Artmark Galerie</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="bg-black text-white rounded-lg px-4 py-2 font-medium">Startseite</a>
+            <a href="about.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Über uns</a>
+            <a href="services.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Ausstellungen</a>
+            <a href="gallery.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Galerie</a>
+            <a href="booking.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Termin buchen</a>
+            <a href="contacts.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1536924940846-22afadf33824?auto=format&fit=crop&q=80&w=1920');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-4xl text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Artmark Galerie Wien</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Zeitgenössische Kunst ab 1950 bis zur Gegenwart im Herzen von Wien</p>
+            <a href="booking.html" class="inline-block bg-[#D4AF37] hover:bg-[#b3922d] text-black font-bold px-8 py-4 rounded-xl text-lg shadow-2xl transition">Besuch planen</a>
+        </div>
+    </header>
+
+    <!-- Highlights -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Aktuelle Höhepunkte</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800" alt="Art" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Nachkriegsmoderne</h3>
+                    <p class="text-gray-600 mb-4">Entdecken Sie wegweisende Werke österreichischer und internationaler Künstler ab 1950.</p>
+                    <a href="services.html" class="text-[#D4AF37] font-semibold hover:underline">Mehr erfahren &rarr;</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&q=80&w=800" alt="Art" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Gegenwartskunst</h3>
+                    <p class="text-gray-600 mb-4">Innovative Positionen junger und etablierter zeitgenössischer Künstler.</p>
+                    <a href="services.html" class="text-[#D4AF37] font-semibold hover:underline">Mehr erfahren &rarr;</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" alt="Art" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Private Führungen</h3>
+                    <p class="text-gray-600 mb-4">Erleben Sie unsere Ausstellungen in exklusivem Rahmen mit persönlicher Beratung.</p>
+                    <a href="booking.html" class="text-[#D4AF37] font-semibold hover:underline">Termin buchen &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black text-white py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Besuchen Sie uns in der Singerstraße</h2>
+            <p class="text-xl text-gray-300 mb-8">Erleben Sie Kunst im historischen Ambiente des 1. Wiener Bezirks, nur wenige Schritte vom Stephansdom entfernt.</p>
+            <a href="contacts.html" class="bg-[#D4AF37] hover:bg-[#b3922d] text-black font-bold px-8 py-4 rounded-xl text-lg transition inline-block">Anfahrt & Öffnungszeiten</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Artmark Galerie Wien</h3>
+                <p>Singerstraße 17, 1010 Wien, Austria</p>
+                <p>office@artmark.at</p>
+                <p>+436643948295</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Öffnungszeiten</h3>
+                <p>Do-Fr 13:00-18:00</p>
+                <p>Sa 11:00-15:00</p>
+                <p>Mittwoch nach Vereinbarung</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Social Media</h3>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/artmarkgalerie" target="_blank" class="hover:text-[#D4AF37]">Instagram</a>
+                    <a href="https://www.facebook.com/artmarkgalerie" target="_blank" class="hover:text-[#D4AF37]">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-center text-sm">
+            &copy; 2024 Artmark Galerie Wien. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
