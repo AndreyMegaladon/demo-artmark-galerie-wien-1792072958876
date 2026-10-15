@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Artmark Galerie Wien</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 h-20 flex items-center justify-between px-8">
+        <a href="index.html" class="text-2xl font-bold tracking-wider">Artmark Galerie</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Startseite</a>
+            <a href="about.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Über uns</a>
+            <a href="services.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Ausstellungen</a>
+            <a href="gallery.html" class="bg-black text-white rounded-lg px-4 py-2 font-medium">Galerie</a>
+            <a href="booking.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Termin buchen</a>
+            <a href="contacts.html" class="hover:bg-gray-100 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-50 py-3 px-8 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto text-sm text-gray-600">
+            <a href="index.html" class="hover:underline">Startseite</a> &gt; <span>Galerie</span>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4 text-center">Impressionen</h1>
+        <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Einblick in unsere Ausstellungsräume in der Singerstraße.</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1536924940846-22afadf33824?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl">
+                <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&q=80&w=800" alt="Gallery" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Artmark Galerie Wien</h3>
+                <p>Singerstraße 17, 1010 Wien, Austria</p>
+                <p>office@artmark.at</p>
+                <p>+436643948295</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Öffnungszeiten</h3>
+                <p>Do-Fr 13:00-18:00</p>
+                <p>Sa 11:00-15:00</p>
+                <p>Mittwoch nach Vereinbarung</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Social Media</h3>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/artmarkgalerie" target="_blank" class="hover:text-[#D4AF37]">Instagram</a>
+                    <a href="https://www.facebook.com/artmarkgalerie" target="_blank" class="hover:text-[#D4AF37]">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-center text-sm">
+            &copy; 2024 Artmark Galerie Wien. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
